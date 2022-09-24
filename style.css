@@ -81,13 +81,19 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
+    line-height: inherit;
 }
 
 .star-num:hover,
 .star-num:focus {
-    background-color: var(--orange-clr);
+    background-color: var(--light-grey-clr);
     color: var(--white-clr);
+}
+
+.star-num:active {
+    transform: scale(0.9);
+    background-color: var(--light-grey-clr);
 }
 
 .final-btn {
@@ -112,6 +118,10 @@ body {
 .active {
     background-color: var(--orange-clr);
     color: var(--white-clr);
+}
+
+.active:hover {
+    background-color: var(--orange-clr);
 }
 
 .thank-you {
